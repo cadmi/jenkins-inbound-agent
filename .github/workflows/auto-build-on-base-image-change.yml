@@ -16,7 +16,7 @@ jobs:
         id: check
         uses: lucacome/docker-image-update-checker@v1
         with:
-          base-image: jenkins/inbound-agent:latest
+          base-image: jenkins/inbound-agent:latest-alpine-jdk11
           image: cadmi/jenkins-inbound-agent:latest
 
       - name: Login to Docker Hub
