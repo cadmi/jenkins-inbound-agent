@@ -39,6 +39,5 @@ jobs:
           context: .
           push: true
           provenance: mode=max
-          tags: ${{ steps.meta.outputs.tags }}
-          # tags: cadmi/jenkins-inbound-agent:latest
+          tags: cadmi/jenkins-inbound-agent:latest
         if: steps.check.outputs.needs-updating == 'true'
