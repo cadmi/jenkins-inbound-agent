@@ -23,7 +23,7 @@ jobs:
         id: check
         uses: lucacome/docker-image-update-checker@v3.1.0
         with:
-          base-image: jenkins/inbound-agent:latest-jdk21
+          base-image: jenkins/inbound-agent:latest-jdk25
           image: cadmi/jenkins-inbound-agent:latest
 
       - name: Set up Docker Buildx
